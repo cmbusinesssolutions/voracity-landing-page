@@ -221,6 +221,10 @@ h2.section-title {
   margin: 0 auto;
 }
 
+.section-text ul {
+  margin-left: 2rem;
+}
+
 .section-image {
   width: 200px;
   height: auto;
@@ -294,30 +298,31 @@ h2.section-title {
 }
 
 
-.form {
+#form {
   text-align: center;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-column-gap: 0;
   grid-gap: 1rem;
-  padding: 2rem ;
+  padding: 0.68rem ;
   background: var(--overlay-bg-color); 
 }
 
-.form .cta-text {
+#form .cta-text {
   font-size: 1.8rem;
   grid-column: span 2;
 }
 
-.footer input {
-  width: 50%;
-  padding: 1rem;
+#form input {
+  font-size: 1.85rem;
+  text-align: center;
+  padding: 0.5rem;
   border-radius: 5px;
   border: 1px solid var(--accent-color);
 }
 
-.form label {
+#form label {
   display: block;
 }
 
@@ -415,7 +420,7 @@ h2.section-title {
     height: auto;
   }
 
-  .form .cta-text {
+  #form .cta-text {
     font-size: 1.65rem;
   }
 
@@ -438,13 +443,18 @@ h2.section-title {
     width: calc(560px * 0.55);
   }
 
-  .form {
+  #form {
     grid-template-columns: 1fr;
   }
 
-  .form .cta-text {
+  #form .cta-text {
     font-size: 1.25rem;
     grid-column: span 1;
+  }
+
+  #form input {
+    font-size: 1rem;
+    
   }
 
   .footer {
