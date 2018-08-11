@@ -1,5 +1,5 @@
 /* Roboto Slab & Open Sans */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
 /*--Basic color scheme--*/
 :root {
@@ -18,12 +18,39 @@
   --container-bg-color: #FCFCFC;
 }
 
+/*-----Global-----*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  line-height: 1.5;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
 body {
-  font-family: 'Open Sans', Helvetica, Sans-Serif;
+  font-family: 'Open Sans', Helvetica, Arial, Sans-Serif;
+  background: var(--default-primary-color);
+  overflow-x: hidden;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Roboto Slab', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family: 'Roboto', Helvetica, Arial, sans-serif
 }
 
 #header {
@@ -34,6 +61,8 @@ h1, h2, h3, h4 {
   position: fixed;
   top: 0; 
   text-transform: uppercase;
+  background: var(--primary-bg-color);
+  margin: 0;
 }
 
 #header * {
@@ -148,7 +177,7 @@ h1, h2, h3, h4 {
 }
 
 .side-nav a:hover, .side-nav.nav-link.active {
-  background-color: var(--overlay-text-color);
+  background: var(--overlay-text-color);
   color: var(--overlay-bg-color);
 }
 
@@ -157,12 +186,27 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 
-.main {
-  width: 90%;
+.intro {
+  width: 100%;
+  /* background: var(--dark-primary-color);
+  color: var(--text-primary-color); */
   margin: 0 auto;
-  margin-top: 30vh;
-  padding: 2rem;
-  border: 1px solid red;
+  margin-top: 8rem;
+}
+
+.main {
+  max-width: 991px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+  transition: margin-left 0.5s;
+  background: var(--container-bg-color);
+}
+
+.section-media {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 
