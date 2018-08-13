@@ -341,7 +341,7 @@ h2.section-title {
   text-align: center;
 }
 
-.footer * {
+.footer {
   color: var(--default-primary-color);
   letter-spacing: 0.12em;
   text-decoration: none;
@@ -350,11 +350,6 @@ h2.section-title {
 .footer .cta-text {
   font-size: 1rem;
   font-weight: 500;
-}
-
-.footer a:hover, .footer button:hover{
-  color: var(--default-primary-color); 
-  background: var(--primary-bg-color);
 }
 
 .section-footer-content {
@@ -368,8 +363,7 @@ h2.section-title {
 .section-footer-content .cta-btn {
   width: 30vw;
   font-weight: bold;
-  color: var(--text-primary-color);
-  background-color: var(--accent-color);
+  background: var(--accent-color);
   margin-top: 0.3rem;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
@@ -392,6 +386,10 @@ h2.section-title {
   display: grid;
   grid-template-columns: repeat(3, 2rem);
   grid-column-gap: 1rem;
+}
+
+.social-media-icons a {
+  color: var(--default-primary-color); 
 }
 
 .footer #copyright-info {
