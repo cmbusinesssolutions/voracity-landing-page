@@ -89,7 +89,7 @@ h1, h2, h3, h4 {
 #header * {
   font-size: 0.85rem;
   font-weight: bold;
-  color: var(--default-primary-color);
+  /* color: var(--default-primary-color); */
   letter-spacing: 0.15em;
   list-style: none;
   text-decoration: none;
@@ -107,15 +107,20 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 
+.top-menu {
+  display: flex;
+}
+
+.top-menu a {
+  color: var(--default-primary-color);
+  padding: 0.25rem 0.68rem;
+  border-radius: 0.3125rem; 
+}
+
 #nav-bar {
   padding: 1.5rem;
   padding-right: 5rem;
 }
-
-#nav-bar a {
-  padding: 0.25rem 0.68rem;
-  border-radius: 0.3125rem;
-} 
 
 #nav-bar a:hover, #nav-bar a:active,
 .nav-link.active {
@@ -124,9 +129,7 @@ h1, h2, h3, h4 {
   color: var(--text-primary-color);
 }
 
-.top-menu {
-  display: flex;
-}
+
 
 #menu-small {
   display: none;
