@@ -67,6 +67,7 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 
   0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  cursor: pointer;
 }
 
 .cta-text {
@@ -281,7 +282,6 @@ h2.section-title {
   background: var(--default-primary-color);
   border-radius: 5px;
   padding: 0.5rem 0.85rem;
-  cursor: pointer;
 }
 
 .section-media {
@@ -353,8 +353,8 @@ h2.section-title {
 }
 
 .footer a:hover, .footer button:hover{
-  border-bottom: 2px solid var(--text-primary-color);
-  border-radius: 0%;
+  color: var(--default-primary-color); 
+  background: var(--primary-bg-color);
 }
 
 .section-footer-content {
@@ -366,7 +366,7 @@ h2.section-title {
 }
 
 .section-footer-content .cta-btn {
-  width: 20vw;
+  width: 30vw;
   font-weight: bold;
   color: var(--text-primary-color);
   background-color: var(--accent-color);
