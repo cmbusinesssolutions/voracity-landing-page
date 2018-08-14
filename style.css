@@ -308,20 +308,22 @@ h2.section-title {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-column-gap: 0;
-  grid-gap: 1rem;
-  padding: 0.68rem ;
-  background: var(--overlay-bg-color); 
+  grid-gap: 0.5rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  background: var(--overlay-bg-color);
+  border-radius: 15px; 
 }
 
 #form .cta-text {
-  font-size: 1.8rem;
+  font-size: 1.65rem;
   grid-column: span 2;
 }
 
 #form input {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.25rem;
   border-radius: 5px;
   border: 1px solid var(--accent-color);
 }
